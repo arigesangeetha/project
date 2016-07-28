@@ -6,6 +6,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Table;
 import javax.persistence.Id;
 
+@SuppressWarnings("unused")
 @Entity
 @Table(name="ProductModel")
 public class ProductModel {

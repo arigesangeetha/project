@@ -21,13 +21,46 @@
 </head>
 <body>
 
-<div width="100%" style="align:center">
+<nav class="navbar navbar" style=background-color:#666666>
+<nav class="navbar navbar-inverse"  >
+  <div class="container-fluid" >
+    <div class="navbar-header" >
+      <a class="navbar-brand" href="#">SHOPPINGCART</a>
+    </div>
+    <ul class="nav navbar-nav" >
+      <li class="active"><a href="http://localhost:8080/sample/home.html">Home</a></li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">mobiles <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">applie</a></li>
+          <li><a href="#">sumsung</a></li>
+          <li><a href="#">motorola</a></li>
+          <li><a href="#">idea</a></li>
+        </ul>
+     </li>
+      <li class="dropdown"><a class="dropdown-toggle" 
+      data-toggle="dropdown" href="#">Mobile Accesaries <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">power banks</a></li>
+          <li><a href="#">cases covers</a></li>
+          <li><a href="#">headphones</a></li>
+        </ul>
+        </li>
+    </ul>
+    <div class="collapse navbar-collapse" style=color:red >
+				<ul class="nav navbar-nav navbar-right">
+				<li><a href="register" ><span
+							class="glyphicon glyphicon-log-in"></span> Register</a></li>
+					
+					<li><a href="loginPage" ><span
+							class="glyphicon glyphicon-log-in"></span> Login</a></li>
+					<li><a href="insert"> <span
+							class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+				</ul>
+			</div>
+	
+  </div>
 
-<a href="register"><button type="button" class="btn btn-success">Register</button></a>
-<a href="loginPage"><button type="button" class="btn btn-success">Login</button></a>
-<a href="insert"><button type="button" class="btn btn-success">Register the Product</button></a>
-
-</div>
+ </nav>
 
 <div class="container">
   <br>
@@ -42,15 +75,15 @@
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
       <div class="item active" style="width:100%; height:400">
-        <img src=<c:url value="/resources/Images/HeartRose.jpg" /> alt="HeartRose">
+        <img src=<c:url value="/resources/Images/1.jpg" /> alt="HeartRose">
       </div>
 
       <div class="item" style="width:100%; height:400">
-        <img src=<c:url value="/resources/Images/rose.jpg" /> alt="Rose">
+        <img src=<c:url value="/resources/Images/2.jpg" /> alt="Rose">
       </div>
     
       <div class="item" style="width:100%; height:400">
-        <img src=<c:url value="/resources/Images/roses.jpg" /> alt="Roses">
+        <img src=<c:url value="/resources/Images/3.jpg" /> alt="Roses">
       </div>
 
     </div>
@@ -70,14 +103,14 @@
 <div><br><br></div>
 
   <div class="row">
-    <div class="col-sm-1" style="background-color:lavender;"></div>
-    <div class="col-sm-2" style="background-color:lavender;"><a href="productsInfo?name=10001"><img src=<c:url value="/resources/Images/HeartRose.jpg" /> alt="HeartRose" width="150" height="150"></a></div>
-    <div class="col-sm-2" style="background-color:lavenderblush;"><a href="productsInfo?name=10002"><img src=<c:url value="/resources/Images/rose.jpg" /> alt="rose" width="150" height="150"></a></div>
-    <div class="col-sm-2" style="background-color:lavender;"><a href="productsInfo?name=10003"><img src=<c:url value="/resources/Images/roses.jpg" /> alt="roses" width="150" height="150"></a></div>
+    <div class="col-sm-3" style="background-color:#666666;"><a href="productsInfo?name=10001"><img src=<c:url value="/resources/Images/1.jpg" /> alt="HeartRose" width="200" height="200"></a></div>
+    <div class="col-sm-3" style="background-color:#666666;"><a href="productsInfo?name=10001"><img src=<c:url value="/resources/Images/2.jpg" /> alt="HeartRose" width="200" height="200"></a></div>
+    <div class="col-sm-3" style="background-color:#666666;"><a href="productsInfo?name=10002"><img src=<c:url value="/resources/Images/3.jpg" /> alt="rose" width="200" height="200"></a></div>
+    <div class="col-sm-3" style="background-color:#666666;"><a href="productsInfo?name=10003"><img src=<c:url value="/resources/Images/4.jpg" /> alt="roses" width="200" height="200"></a></div>
   </div>
-<div style="width:100%; height:20;"></div>
-<div style="width:100%; height:40; border:1px dotted blue;">
-<a href="productsInfo?name=all">All Products</a>
+<div style="width:100%; height:40;"></div>
+<div style="width:100%; height:40; border:1px dotted white;">
+<a href="productsInfo?name=all"  style="color:white;align:middle; ">All Products</a>
 </div>
 
 </body>

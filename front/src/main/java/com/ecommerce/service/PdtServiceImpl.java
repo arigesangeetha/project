@@ -33,6 +33,7 @@ public class PdtServiceImpl implements PdtService {
 		ProductDAO.deleteProduct(id);
 	}
 
+	@SuppressWarnings("rawtypes")
 	public List getProducts() {
 		System.out.println("Service Implementation");
 		return ProductDAO.getAllProducts();

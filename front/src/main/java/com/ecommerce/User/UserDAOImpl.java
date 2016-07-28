@@ -14,6 +14,7 @@ public class UserDAOImpl implements UserDAOInterface {
 	@Autowired
 	private SessionFactory sessionFactory;
 
+	@SuppressWarnings("unused")
 	private Session getCurrentSession() {
 		return sessionFactory.getCurrentSession();
 	}
@@ -23,6 +24,7 @@ public class UserDAOImpl implements UserDAOInterface {
 		s.saveOrUpdate(user);
 	}
 	 
+	@SuppressWarnings({ "unused", "unchecked" })
 	public UserDetails checkUser(UserDetails user){
 		System.out.println(user.getUsername()+" "+user.getEmail());
 		String result = "";

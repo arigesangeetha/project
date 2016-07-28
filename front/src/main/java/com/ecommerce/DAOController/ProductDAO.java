@@ -20,6 +20,7 @@ public class ProductDAO implements ProductInterface{
 	@Autowired
 	private SessionFactory sessionFactory;
 
+	@SuppressWarnings("unused")
 	private Session getCurrentSession() {
 		return sessionFactory.getCurrentSession();
 	}

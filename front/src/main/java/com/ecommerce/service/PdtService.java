@@ -13,6 +13,7 @@ public interface PdtService {
 	
 	public void deleteProduct(int id);
 	
+	@SuppressWarnings("rawtypes")
 	public List getProducts(); 
 	
 	public ProductModel getRowById(int id);

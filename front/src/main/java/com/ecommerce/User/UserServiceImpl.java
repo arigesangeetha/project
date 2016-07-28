@@ -7,6 +7,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import com.ecommerce.DAOController.ProductDAO;
 
+@SuppressWarnings("unused")
 @Service
 @Transactional
 public class UserServiceImpl implements UserServiceInterface{

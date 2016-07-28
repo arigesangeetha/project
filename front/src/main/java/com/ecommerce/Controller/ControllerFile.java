@@ -27,6 +27,7 @@ import com.ecommerce.service.PdtServiceImpl;
 import com.ecommerce.User.*;
 
 
+@SuppressWarnings("unused")
 @Controller
 public class ControllerFile 
 {
